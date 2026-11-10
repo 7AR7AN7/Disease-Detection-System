@@ -1,0 +1,84 @@
+{
+  "trained_at": "2026-11-10T05:45:41.567370+00:00",
+  "sklearn_version": "1.9.1",
+  "diseases": {
+    "diabetes": {
+      "model": "random_forest",
+      "dataset": "Pima Indians Diabetes Database (NIDDK / UCI)",
+      "n_samples": 768,
+      "n_train": 614,
+      "n_test": 154,
+      "positive_rate": 0.349,
+      "cv_f1_by_model": {
+        "logistic_regression": 0.6724,
+        "random_forest": 0.6853,
+        "gradient_boosting": 0.6229
+      },
+      "test_metrics": {
+        "accuracy": 0.7338,
+        "precision": 0.6032,
+        "recall": 0.7037,
+        "f1": 0.6496,
+        "roc_auc": 0.8191,
+        "confusion_matrix": {
+          "tn": 75,
+          "fp": 25,
+          "fn": 16,
+          "tp": 38
+        }
+      }
+    },
+    "heart": {
+      "model": "logistic_regression",
+      "dataset": "UCI Heart Disease (Cleveland)",
+      "n_samples": 303,
+      "n_train": 242,
+      "n_test": 61,
+      "positive_rate": 0.4587,
+      "cv_f1_by_model": {
+        "logistic_regression": 0.8308,
+        "random_forest": 0.7892,
+        "gradient_boosting": 0.7829
+      },
+      "test_metrics": {
+        "accuracy": 0.8689,
+        "precision": 0.8125,
+        "recall": 0.9286,
+        "f1": 0.8667,
+        "roc_auc": 0.9578,
+        "confusion_matrix": {
+          "tn": 27,
+          "fp": 6,
+          "fn": 2,
+          "tp": 26
+        }
+      }
+    },
+    "liver": {
+      "model": "gradient_boosting",
+      "dataset": "Indian Liver Patient Dataset (ILPD, UCI)",
+      "n_samples": 583,
+      "n_train": 466,
+      "n_test": 117,
+      "positive_rate": 0.7136,
+      "cv_f1_by_model": {
+        "logistic_regression": 0.697,
+        "random_forest": 0.7478,
+        "gradient_boosting": 0.8096
+      },
+      "test_metrics": {
+        "accuracy": 0.6923,
+        "precision": 0.7374,
+        "recall": 0.8795,
+        "f1": 0.8022,
+        "roc_auc": 0.7512,
+        "confusion_matrix": {
+          "tn": 8,
+          "fp": 26,
+          "fn": 10,
+          "tp": 73
+        }
+      }
+    }
+  }
+}
